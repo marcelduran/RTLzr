@@ -1,0 +1,14 @@
+<!ENTITY rtlzr.toggle "Toggle LTR/RTL">
+<!ENTITY rtlzr.exportCssChanges "Export CSS Changes">
+<!ENTITY rtlzr.autoToggleDirection "Auto Toggle LTR/RTL">
+<!ENTITY rtlzr.preferences "Preferences...">
+<!ENTITY prefs.title "RTLzr Preferences">
+<!ENTITY prefs.flipping "Flipping">
+<!ENTITY prefs.exporting "Exporting">
+<!ENTITY prefs.edgeCases "Edge Cases">
+<!ENTITY prefs.flipImport "Flip @import rules (recursively)">
+<!ENTITY prefs.flipFrames "Flip frames/iframes (recursively)">
+<!ENTITY prefs.exportInlineStyles "Export inline styles (experimental)">
+<!ENTITY prefs.removeTextDecoration "Remove text decoration for overflow:hidden">
+<!ENTITY prefs.fixHiddenAbsoluteElements "Fix hidden elements with position:absolute">
+<!ENTITY prefs.forceDisplayInlineFloat "Add float:right/left to display:inline">

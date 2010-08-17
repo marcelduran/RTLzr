@@ -1,0 +1,14 @@
+<!ENTITY rtlzr.toggle "Alternar LTR/RTL">
+<!ENTITY rtlzr.exportCssChanges "Exportar modificações no CSS">
+<!ENTITY rtlzr.autoToggleDirection "Alternar LTR/RTL automaticamente">
+<!ENTITY rtlzr.preferences "Preferências...">
+<!ENTITY prefs.title "Preferências RTLzr">
+<!ENTITY prefs.flipping "Inverção">
+<!ENTITY prefs.exporting "Exportação">
+<!ENTITY prefs.edgeCases "Casos Extremos">
+<!ENTITY prefs.flipImport "Inverter regras @import (recursivamente)">
+<!ENTITY prefs.flipFrames "Inverter frames/iframes (recursivamente)">
+<!ENTITY prefs.exportInlineStyles "Exportar inline styles (experimental)">
+<!ENTITY prefs.removeTextDecoration "Remover decoração de links para overflow:hidden">
+<!ENTITY prefs.fixHiddenAbsoluteElements "Consertar elementos ocultos com position:absolute">
+<!ENTITY prefs.forceDisplayInlineFloat "Adicionar float:right/left em display:inline">

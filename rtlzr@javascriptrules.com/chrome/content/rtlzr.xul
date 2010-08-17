@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://rtlzr/skin/rtlzr.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://rtlzr/locale/rtlzr.dtd">
+<overlay id="rtlzr-overlay"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+    <script src="rtlzr.js" />
+
+    <stringbundleset>
+        <stringbundle id="rtlzr-strings" src="chrome://rtlzr/locale/rtlzr.properties"/>
+    </stringbundleset>
+
+    <toolbox id="navigator-toolbox">
+        <tooltip id="rtlzr-tooltip" orient="vertical">
+            <description id="rtlzr-status-tooltip" value="&rtlzr.toggle;"/>
+        </tooltip>
+    </toolbox>
+
+    <statusbar id="status-bar">
+        <statusbarpanel id="rtlzr-statusbar-button"
+		    onclick="rtlzr.toggleDirection(event)"
+		    context="rtlzr-menupopup"
+		    tooltip="rtlzr-tooltip">
+            <label id="rtlzr-statusbar-text" style="margin: 1px" value="LTR"/>
+        </statusbarpanel>
+        <popupset id="rtlzr-popupset">
+            <menupopup id="rtlzr-menupopup">
+                <menuitem id="rtlzr-menuitem-toggle" label="&rtlzr.toggle;" oncommand="rtlzr.toggleDirection({button:0})" />
+                <menuitem id="rtlzr-menuitem-exportcsschanges" label="&rtlzr.exportCssChanges;" oncommand="rtlzr.exportCSSChanges()" />
+                <menuseparator/>
+                <menuitem id="rtlzr-menuitem-autotoggle" label="&rtlzr.autoToggleDirection;" oncommand="rtlzr.setAutoToggle()" type="checkbox"/>
+                <menuitem id="rtlzr-menuitem-preferences" label="&rtlzr.preferences;" oncommand="rtlzr.showPreferences()" />
+            </menupopup>
+        </popupset>
+    </statusbar>
+</overlay>

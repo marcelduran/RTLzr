@@ -1,0 +1,36 @@
+<?xml version="1.0"?> 
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://mozapps/content/preferences/preferences.css"?>
+<!DOCTYPE dialog SYSTEM "chrome://rtlzr/locale/rtlzr.dtd">
+
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            xmlns:html="http://www.w3.org/1999/xhtml"
+            id="rtlzr-preferences"
+            title="&prefs.title;"
+            persist="screenX screenY width height">
+    <prefpane id="all">
+        <preferences>
+            <preference id="flip-import" name="extensions.rtlzr.flipImport" type="bool"/>
+            <preference id="flip-frames" name="extensions.rtlzr.flipFrames" type="bool"/>
+            <preference id="export-inline-styles" name="extensions.rtlzr.exportInlineStyles" type="bool"/>
+            <preference id="fix-hidden-absolute-elements" name="extensions.rtlzr.fixHiddenAbsoluteElements" type="bool"/>
+            <preference id="remove-text-decoration" name="extensions.rtlzr.removeTextDecoration" type="bool"/>
+            <preference id="force-display-inline-float" name="extensions.rtlzr.forceDisplayInlineFloat" type="bool"/>
+        </preferences>
+        <groupbox flex="1">
+            <caption label="&prefs.flipping;"/>
+            <checkbox preference="flip-import" label="&prefs.flipImport;" />
+            <checkbox preference="flip-frames" label="&prefs.flipFrames;" />
+        </groupbox>
+        <groupbox flex="1">
+            <caption label="&prefs.exporting;"/>
+            <checkbox preference="export-inline-styles" label="&prefs.exportInlineStyles;" />
+        </groupbox>
+        <groupbox flex="1">
+            <caption label="&prefs.edgeCases;"/>
+            <checkbox preference="remove-text-decoration" label="&prefs.removeTextDecoration;" />
+            <checkbox preference="fix-hidden-absolute-elements" label="&prefs.fixHiddenAbsoluteElements;" />
+            <checkbox preference="force-display-inline-float" label="&prefs.forceDisplayInlineFloat;" />
+        </groupbox>
+    </prefpane>
+</prefwindow>

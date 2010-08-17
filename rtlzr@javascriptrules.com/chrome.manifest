@@ -1,0 +1,4 @@
+content rtlzr chrome/content/
+overlay chrome://browser/content/browser.xul chrome://rtlzr/content/rtlzr.xul
+locale rtlzr en-US chrome/locale/en-US/
+locale rtlzr pt-BR chrome/locale/pt-BR/
